@@ -1,0 +1,160 @@
+.gradientUiService {
+  background-image: url(images/PngItem_6397810.png);
+}
+
+.bgSearch {
+  background-color: transparent;
+  backdrop-filter: blur(50px);
+  border-color: none;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.card-deck {
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+.alignServiceItems {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imgService {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.imgCover {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardServiceText {
+  padding-top: 10px;
+  font-size: 15px;
+  color: black;
+  font-weight: 700;
+}
+.cardServiceParagraph {
+  margin-top: 20px;
+  font-size: 15px;
+  color:black;
+}
+
+.cardServiceInnerText {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.wrapper {
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+.wrapper .search-input {
+  background: #fff;
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+.search-input input {
+  height: 55px;
+  width: 800px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+.search-input.active input {
+  border-radius: 5px 5px 0 0;
+}
+.search-input .autocom-box {
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+.search-input.active .autocom-box {
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.search-input .icon1 {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #644bff;
+  cursor: pointer;
+}
+
+.card {
+  transition: all 0.2s;
+}
+
+.card:hover {
+  background-color: transparent !important;
+  transform: scale(0.54);
+  transform: translateY(0) scale(1.1);
+}
+
+@media (min-width: 576px) {
+  .card-deck .card {
+    margin-bottom: 30px !important;
+  }
+}
+
+.centerCards {
+  width: 100%;
+}
+
+.overflowScroll{
+  overflow:scroll;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  height:5px;
+ 
+}
+
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+   margin-top: 20px;
+   
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background:#DCD1DD; 
+  border-radius: 20px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
+
+@media only screen and (max-width: 600px){
+  .search-input input{
+    width:100%;
+  }
+}
